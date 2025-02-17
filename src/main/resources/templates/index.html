@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Uploader</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" th:href="@{/styles/styles.css}">
+</head>
+<body>
+
+<!-- Main Container -->
+<div class="container">
+    <h1>Upload Your <span>Document</span></h1>
+
+    <!-- Flash message -->
+    <div th:if="${message}">
+        <p th:text="${message}" style="color: green; font-weight: bold;"></p>
+    </div>
+
+    <!-- Upload Form -->
+    <form method="POST" enctype="multipart/form-data" th:action="@{/upload}">
+        <label for="file" class="label">Select File:</label>
+        <input type="file" id="file" name="file" required>
+
+        <button type="submit" class="button">Upload</button>
+    </form>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Need help? <a href="#">Contact Support</a></p>
+    </div>
+</div>
+
+</body>
+</html>
