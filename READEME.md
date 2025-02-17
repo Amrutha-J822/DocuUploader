@@ -45,8 +45,8 @@ This project is a Spring Boot web application that enables users to upload and m
 ### Clone the repository:
 
 ```
-git clone [your-repo-url]
-cd [your-project-folder]
+git clone https://github.com/Amrutha-J822/DocuUploader.git
+cd your-project
 ```
 
 ### Install dependencies:
@@ -64,8 +64,6 @@ mvn spring-boot:run
 ```
 http://localhost:8080
 ```
-
-## 🔐 Security Implementations:
 
 ## 🔐 Security Implementations:
 
